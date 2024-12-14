@@ -1,0 +1,54 @@
+{
+  "info": {
+    "name": "Meta Ads API",
+    "description": "Coleção para testar a API do Meta Ads",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Insights",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://graph.facebook.com/v18.0/act_497934426132828/insights?access_token={{access_token}}&fields=spend,actions,action_values&time_range={'since':'{{start_date}}','until':'{{end_date}}'}&level=account",
+          "protocol": "https",
+          "host": ["graph.facebook.com"],
+          "path": ["v18.0", "act_497934426132828", "insights"],
+          "query": [
+            {
+              "key": "access_token",
+              "value": "{{access_token}}"
+            },
+            {
+              "key": "fields",
+              "value": "spend,actions,action_values"
+            },
+            {
+              "key": "time_range",
+              "value": "{'since':'{{start_date}}','until':'{{end_date}}'}"
+            },
+            {
+              "key": "level",
+              "value": "account"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "access_token",
+      "value": "EAASwSQL9ZCNwBOzhRBzVEhGVZAuTSevs4qbryectN74sqToIxYchwtvIVIUH9eGfraSl0G6YIBnuEGGYEdv8CBTlFvJ3OwA0sNdAPmp2StZCOb5jvkmlmMZBHQtNk6zQWud1QbqPxA7vzNZBZBZAWpB5QDZCzflDnysIuFZAzakW8oTm9mOXBCEC2ZAMnw6l8VjWcE"
+    },
+    {
+      "key": "start_date",
+      "value": "2024-01-01"
+    },
+    {
+      "key": "end_date", 
+      "value": "2024-12-31"
+    }
+  ]
+}
